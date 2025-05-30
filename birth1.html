@@ -343,14 +343,23 @@
           }
         }
         @media only screen and (max-width: 800px) {
-        .gallery {
+        .gallery .gif-container.glass-container {
           --d: 10s;
           /* duration */
           display: grid;
           place-items: center; /* Center both horizontally and vertically */
-          width: 150px;
+          width: 100%;
+          max-width: 100%;
           margin-left: 30px;
         }
+        }
+        * {
+          box-sizing: border-box;
+        }
+        
+        html, body {
+          max-width: 100%;
+          overflow-x: hidden;
         }
     </style>
 </head>
